@@ -11,13 +11,11 @@ import java.util.Random;
 public class Sudoku {
 	
 	private int[][] board;
-	private boolean[][] fixed;
 	int counter;
 	Random random = new Random();
 	
 	public Sudoku() {
 		this.board = new int[9][9];
-		this.fixed = new boolean[9][9];
 		counter = 0;
 		generateSudoku();
 		removeNum();
@@ -56,7 +54,7 @@ public class Sudoku {
 	
 	private void removeNum() {
 		
-		int removeNum = 2;
+		int removeNum = 45;
 		
 		for(int i = removeNum; i > 0;i-- ) {
 			int row = random.nextInt(9);

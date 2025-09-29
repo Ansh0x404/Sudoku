@@ -29,6 +29,7 @@ public class SudokuGUI extends JFrame{
 	private int selectedRow = -1;
 	private int selectedCol = -1;
 	
+	@SuppressWarnings("unused")
 	public SudokuGUI() {
 		sudoku = new Sudoku();
 		inputFields = new JTextField[9][9];
