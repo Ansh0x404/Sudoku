@@ -1,0 +1,10 @@
+# Ignore compiled files
+*.class
+
+# Ignore Eclipse settings
+*.classpath
+*.project
+.settings/
+
+# Ignore build folders
+bin
